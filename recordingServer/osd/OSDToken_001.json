@@ -1,0 +1,33 @@
+{
+    'VideoSourceConfigurationToken': {
+        '_value_1': 'V_SRC_000',
+        '_attr_1': None
+    },
+    'Type': 'Text',
+    'Position': {
+        'Type': 'LowerRight',
+        'Pos': {
+            'x': 0.22,
+            'y': -0.84
+        },
+        'Extension': None,
+        '_attr_1': None
+    },
+    'TextString': {
+        'Type': 'Plain',
+        'DateFormat': None,
+        'TimeFormat': None,
+        'FontSize': None,
+        'FontColor': None,
+        'BackgroundColor': None,
+        'PlainText': 'CAM2 N 59.964098; E 30.333166',
+        'Extension': None,
+        '_attr_1': None,
+        '_raw_elements': deque([<Element {http://www.onvif.org/ver10/schema}FontSize at 0xf3955128>, <Element {http://www.onvif.org/ver10/schema}FontColor at 0xf3955348>, <Element {http://www.onvif.org/ver10/schema}BackgroundColor at 0xf3955168>])
+    },
+    'Image': None,
+    'Extension': None,
+    'token': 'OSDToken_001',
+    '_attr_1': {
+}
+}

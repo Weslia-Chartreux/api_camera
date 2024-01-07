@@ -1,0 +1,163 @@
+{
+    'Name': 'PROFILE_000',
+    'VideoSourceConfiguration': {
+        'Name': 'V_SRC_000',
+        'UseCount': 2,
+        'SourceToken': 'vstoken0',
+        'Bounds': {
+            'x': 0,
+            'y': 0,
+            'width': 2560,
+            'height': 1440
+        },
+        '_value_1': None,
+        'Extension': None,
+        'token': 'V_SRC_000',
+        '_attr_1': {
+    }
+    },
+    'AudioSourceConfiguration': {
+        'Name': 'A_SRC_000',
+        'UseCount': 2,
+        'SourceToken': 'AudioSourceToken',
+        '_value_1': None,
+        'token': 'A_SRC_000',
+        '_attr_1': {
+    }
+    },
+    'VideoEncoderConfiguration': {
+        'Name': 'V_ENC_000',
+        'UseCount': 1,
+        'Encoding': 'H264',
+        'Resolution': {
+            'Width': 2560,
+            'Height': 1440
+        },
+        'Quality': 100.0,
+        'RateControl': {
+            'FrameRateLimit': 25,
+            'EncodingInterval': 1,
+            'BitrateLimit': 3072
+        },
+        'MPEG4': None,
+        'H264': {
+            'GovLength': 50,
+            'H264Profile': 'Baseline'
+        },
+        'Multicast': {
+            'Address': {
+                'Type': 'IPv4',
+                'IPv4Address': '239.0.1.0',
+                'IPv6Address': None
+            },
+            'Port': 32002,
+            'TTL': 2,
+            'AutoStart': False,
+            '_value_1': None,
+            '_attr_1': None
+        },
+        'SessionTimeout': datetime.timedelta(seconds=10),
+        '_value_1': None,
+        'token': 'V_ENC_000',
+        '_attr_1': {
+    }
+    },
+    'AudioEncoderConfiguration': {
+        'Name': 'A_ENC_000',
+        'UseCount': 2,
+        'Encoding': 'G711',
+        'Bitrate': 64,
+        'SampleRate': 8,
+        'Multicast': {
+            'Address': {
+                'Type': 'IPv4',
+                'IPv4Address': '239.0.1.0',
+                'IPv6Address': None
+            },
+            'Port': 32002,
+            'TTL': 2,
+            'AutoStart': False,
+            '_value_1': None,
+            '_attr_1': None
+        },
+        'SessionTimeout': datetime.timedelta(seconds=10),
+        '_value_1': None,
+        'token': 'A_ENC_000',
+        '_attr_1': {
+    }
+    },
+    'VideoAnalyticsConfiguration': {
+        'Name': 'VideoAnalytics',
+        'UseCount': 2,
+        'AnalyticsEngineConfiguration': {
+            'AnalyticsModule': [
+                {
+                    'Parameters': {
+                        'SimpleItem': [
+                            {
+                                'Name': 'Sensitivity',
+                                'Value': '50'
+                            }
+                        ],
+                        'ElementItem': [
+                            {
+                                '_value_1': <Element {http://www.onvif.org/ver10/schema}CellLayout at 0xf39528e8>,
+                                'Name': 'Layout'
+                            }
+                        ],
+                        'Extension': None,
+                        '_attr_1': None
+                    },
+                    'Name': 'YGCellMotionModule',
+                    'Type': 'tt:CellMotionEngine'
+                }
+            ],
+            'Extension': None,
+            '_attr_1': None
+        },
+        'RuleEngineConfiguration': {
+            'Rule': [
+                {
+                    'Parameters': {
+                        'SimpleItem': [
+                            {
+                                'Name': 'MinCount',
+                                'Value': '20'
+                            },
+                            {
+                                'Name': 'AlarmOnDelay',
+                                'Value': '1000'
+                            },
+                            {
+                                'Name': 'AlarmOffDelay',
+                                'Value': '1000'
+                            },
+                            {
+                                'Name': 'ActiveCells',
+                                'Value': 'z/8='
+                            }
+                        ],
+                        'ElementItem': [],
+                        'Extension': None,
+                        '_attr_1': None
+                    },
+                    'Name': 'YGMotionDetectorRule',
+                    'Type': 'tt:CellMotionDetector'
+                }
+            ],
+            'Extension': None,
+            '_attr_1': None
+        },
+        '_value_1': None,
+        'token': 'VideoAnalyticsToken',
+        '_attr_1': {
+    }
+    },
+    'PTZConfiguration': None,
+    'MetadataConfiguration': None,
+    'Extension': None,
+    'token': 'PROFILE_000',
+    'fixed': True,
+    '_attr_1': {
+}
+}

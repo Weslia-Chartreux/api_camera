@@ -1,0 +1,52 @@
+{
+    'VideoSourceConfigurationToken': {
+        '_value_1': 'V_SRC_000',
+        '_attr_1': None
+    },
+    'Type': 'Text',
+    'Position': {
+        'Type': 'UpperLeft',
+        'Pos': {
+            'x': -0.96,
+            'y': 0.94
+        },
+        'Extension': None,
+        '_attr_1': None
+    },
+    'TextString': {
+        'Type': 'DateAndTime',
+        'DateFormat': 'yyyy/MM/dd WWW',
+        'TimeFormat': 'HH:mm:ss',
+        'FontSize': 64,
+        'FontColor': {
+            'Color': {
+                'X': 235.0,
+                'Y': 128.0,
+                'Z': 128.0,
+                'Colorspace': None
+            },
+            'Transparent': 255,
+            '_attr_1': {
+        }
+        },
+        'BackgroundColor': {
+            'Color': {
+                'X': 16.0,
+                'Y': 128.0,
+                'Z': 128.0,
+                'Colorspace': None
+            },
+            'Transparent': 255,
+            '_attr_1': {
+        }
+        },
+        'PlainText': None,
+        'Extension': None,
+        '_attr_1': None
+    },
+    'Image': None,
+    'Extension': None,
+    'token': 'OSDToken_000',
+    '_attr_1': {
+}
+}

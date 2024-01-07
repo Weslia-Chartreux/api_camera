@@ -1,0 +1,16 @@
+version: "3.4"
+name: myproject
+services:
+  api_server_camera:
+      container_name: api_server_camera
+      build:
+        context: ./
+        dockerfile: ./api_server/Dockerfile
+      volumes:
+        - ./recordingServer/osd:/osd
+        - ./recordingServer/wsdl:/wsdl
+        - ./recordingServer/profiles:/profiles
+      ports:
+        - 8000:8000
+      command: uvicorn server:app --reload --host 0.0.0.0 --port 8000
+      restart: unless-stopped
